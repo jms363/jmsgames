@@ -1,0 +1,35 @@
+{
+  "$comment": "Add a game = add an object here. status: 'live' | 'soon'. accent is the card's neon glow color. thumb is relative to site root.",
+  "games": [
+    {
+      "slug": "drugbiz",
+      "name": "Drug BiZ",
+      "tagline": "Buy low, sell high, build an empire — and don't get caught.",
+      "tags": ["Simulation", "Strategy"],
+      "url": "https://drugbiz.jmsgames.com",
+      "thumb": "assets/games/drugbiz.png",
+      "accent": "#a855f7",
+      "status": "live"
+    },
+    {
+      "slug": "game-two",
+      "name": "Coming Soon",
+      "tagline": "The next JMS Games title is in the works.",
+      "tags": ["TBA"],
+      "url": "",
+      "thumb": "",
+      "accent": "#22d3ee",
+      "status": "soon"
+    },
+    {
+      "slug": "game-three",
+      "name": "Coming Soon",
+      "tagline": "More games are on the way.",
+      "tags": ["TBA"],
+      "url": "",
+      "thumb": "",
+      "accent": "#f472b6",
+      "status": "soon"
+    }
+  ]
+}

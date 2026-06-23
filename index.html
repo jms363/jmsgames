@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JMS Games — Play Joe Sardo's web games</title>
+    <meta
+      name="description"
+      content="JMS Games is the home of Joe Sardo's web games. Browse and play the collection — free, in your browser, no download."
+    />
+    <meta name="theme-color" content="#0a0a12" />
+
+    <!-- Open Graph / social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="JMS Games" />
+    <meta property="og:description" content="Free web games, playable in your browser. No download." />
+    <meta property="og:url" content="https://jmsgames.com" />
+    <meta property="og:image" content="https://jmsgames.com/assets/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate icon" href="/favicon.ico" />
+    <link rel="canonical" href="https://jmsgames.com/" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- Analytics: create a GA4 property for jmsgames.com and paste its ID below.
+         Left out by default so hub traffic isn't attributed to a game's stream.
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    -->
+  </head>
+  <body>
+    <div class="scanlines" aria-hidden="true"></div>
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="/">
+        <span class="brand-mark">JMS</span>
+        <span class="brand-word">GAMES</span>
+      </a>
+      <p class="tagline">Free web games. No download. Just press start.</p>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>
+          <span class="hero-line-1">PICK A GAME.</span>
+          <span class="hero-line-2">PLAY NOW.</span>
+        </h1>
+        <p class="hero-sub">
+          A growing arcade of browser games built by Joe Sardo. Click any cabinet to play.
+        </p>
+      </section>
+
+      <section class="grid-wrap" aria-label="Games">
+        <div id="games" class="grid">
+          <!-- Cards injected by app.js from games.json -->
+        </div>
+        <noscript>
+          <p class="noscript">
+            Enable JavaScript to load the game list — or jump straight to
+            <a href="https://drugbiz.jmsgames.com">Drug BiZ</a>.
+          </p>
+        </noscript>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> JMS Games · Built by Joe Sardo</p>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
