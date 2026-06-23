@@ -49,13 +49,13 @@ def draw_glow_text(base, xy, text, font, fill, glow_color, anchor="mm", blur=18)
 # --- title: JMS GAMES (two-color) ---
 cx, cy = W // 2, 250
 jms = "JMS "
-games = "GAMES"
+studios = "STUDIOS"
 jms_w = draw.textlength(jms, font=title_font)
-games_w = draw.textlength(games, font=title_font)
-total = jms_w + games_w
+studios_w = draw.textlength(studios, font=title_font)
+total = jms_w + studios_w
 start = cx - total / 2
 draw_glow_text(img, (start + jms_w / 2, cy), jms, title_font, (244, 244, 251), PURPLE, anchor="mm")
-draw_glow_text(img, (start + jms_w + games_w / 2, cy), games, title_font, (244, 244, 251), CYAN, anchor="mm")
+draw_glow_text(img, (start + jms_w + studios_w / 2, cy), studios, title_font, (244, 244, 251), CYAN, anchor="mm")
 
 # --- subtitle ---
 draw = ImageDraw.Draw(img)

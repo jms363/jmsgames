@@ -1,6 +1,6 @@
-# JMS Games — hub (jmsgames.com)
+# JMS Studios — hub (jmsgames.com)
 
-The landing page / portfolio for Joe Sardo's web games. Each game lives in its
+The landing page / portfolio for the JMS Studios web games. Each game lives in its
 **own** repo and Cloudflare Pages project, served at `gamename.jmsgames.com`.
 This hub is the front door at the apex `jmsgames.com` (+ `www`) and just links out.
 
