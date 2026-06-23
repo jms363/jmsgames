@@ -16,9 +16,17 @@ styles.css      arcade / neon dark theme
 app.js          fetches games.json and renders the card grid
 games.json      the game manifest — THE thing you edit to add a game
 404.html        styled not-found page
-favicon.svg     JMS GAMES mark
+favicon.ico     pixel "JMS" mark (Press Start 2P, baked raster)
+apple-touch-icon.png  iOS/Android home-screen icon
+assets/fonts/   bundled Press Start 2P (OFL) used by the generators
 assets/games/   per-game card thumbnails
+assets/make_og.py       regenerates assets/og.png (social preview)
+assets/make_favicon.py  regenerates favicon.ico + apple-touch-icon.png
 ```
+
+The OG image and favicons use the site's pixel font (Press Start 2P). To change
+the branding, edit the generator scripts and re-run them (`python assets/make_og.py`,
+`python assets/make_favicon.py`).
 
 ## Add a new game
 
@@ -72,4 +80,4 @@ game's own Pages project** — Custom domains → `drugbiz.jmsgames.com`.
 ## TODO
 
 - [ ] Create a GA4 property for `jmsgames.com` and paste its ID into the (commented) analytics block in `index.html`.
-- [ ] Add a real `favicon.ico` and a social `assets/og.png` (1200×630) for link previews.
+- [x] Favicon (`favicon.ico`) + social preview (`assets/og.png`) — generated from the pixel font.

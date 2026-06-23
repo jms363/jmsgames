@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#0a0a12"/>
-  <text x="32" y="30" text-anchor="middle" font-family="'Press Start 2P', monospace, sans-serif"
-        font-size="15" font-weight="700" fill="#a855f7">JMS</text>
-  <text x="32" y="48" text-anchor="middle" font-family="'Press Start 2P', monospace, sans-serif"
-        font-size="7" font-weight="700" fill="#22d3ee">STUDIOS</text>
-</svg>
