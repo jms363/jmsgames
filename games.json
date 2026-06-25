@@ -12,14 +12,14 @@
       "status": "live"
     },
     {
-      "slug": "game-two",
-      "name": "Coming Soon",
-      "tagline": "The next JMS Studios title is in the works.",
-      "tags": ["TBA"],
-      "url": "",
-      "thumb": "",
-      "accent": "#22d3ee",
-      "status": "soon"
+      "slug": "office-ninja",
+      "name": "Office Ninja",
+      "tagline": "Grab every coffee and sneak out before the boss notices.",
+      "tags": ["Stealth", "Arcade"],
+      "url": "https://office-ninja.jmsgames.com",
+      "thumb": "assets/games/office-ninja.png",
+      "accent": "#ff6fae",
+      "status": "live"
     },
     {
       "slug": "game-three",
