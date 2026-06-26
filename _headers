@@ -1,4 +1,6 @@
 # Allow any origin to read the games manifest — each game's "Game →" nav fetches
 # it cross-origin, including when a game is embedded off-site (e.g. itch.io).
+# Short cache so manifest edits (new games) and this header propagate quickly.
 /games.json
   Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=300
