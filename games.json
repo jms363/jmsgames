@@ -22,6 +22,16 @@
       "status": "live"
     },
     {
+      "slug": "ai-frenzy",
+      "name": "AI Frenzy",
+      "tagline": "Click a GPU, stack hardware, and idle your way to AGI.",
+      "tags": ["Idle", "Clicker"],
+      "url": "https://ai-frenzy.jmsgames.com",
+      "thumb": "assets/games/ai-frenzy.png",
+      "accent": "#22d3ee",
+      "status": "live"
+    },
+    {
       "slug": "game-three",
       "name": "Coming Soon",
       "tagline": "More games are on the way.",
