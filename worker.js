@@ -8,7 +8,15 @@ export default {
     if (url.pathname === '/api/subscribe' && request.method === 'POST') {
       return handleSubscribe(request, env);
     }
-    return env.ASSETS.fetch(request);
+    const res = await env.ASSETS.fetch(request);
+    // Let any origin read the games manifest — each game's "Game →" nav fetches
+    // it, including when a game is embedded off-site (e.g. itch.io).
+    if (url.pathname === '/games.json') {
+      const headers = new Headers(res.headers);
+      headers.set('Access-Control-Allow-Origin', '*');
+      return new Response(res.body, { status: res.status, statusText: res.statusText, headers });
+    }
+    return res;
   },
 };
 
