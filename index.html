@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>JMS Studios — Play our web games</title>
+    <title>JMS Studios — Free Web Games to Play in Your Browser</title>
     <meta
       name="description"
       content="JMS Studios is the home of our web games. Browse and play the collection — free, in your browser, no download."
@@ -21,6 +21,30 @@
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="canonical" href="https://jmsgames.com/" />
+
+    <!-- Structured data: the studio + its game collection -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "JMS Studios",
+      "url": "https://jmsgames.com/",
+      "description": "Free web games, playable in your browser. No download.",
+      "publisher": { "@type": "Organization", "name": "JMS Studios", "url": "https://jmsgames.com/" }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "JMS Studios games",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "item": { "@type": "VideoGame", "name": "Drug BiZ", "url": "https://drugbiz.jmsgames.com/", "genre": ["Simulation", "Strategy"], "gamePlatform": "Web Browser", "applicationCategory": "Game", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } } },
+        { "@type": "ListItem", "position": 2, "item": { "@type": "VideoGame", "name": "Office Ninja", "url": "https://office-ninja.jmsgames.com/", "genre": ["Stealth", "Arcade"], "gamePlatform": "Web Browser", "applicationCategory": "Game", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } } },
+        { "@type": "ListItem", "position": 3, "item": { "@type": "VideoGame", "name": "AI Frenzy", "url": "https://ai-frenzy.jmsgames.com/", "genre": ["Idle", "Clicker", "Incremental"], "gamePlatform": "Web Browser", "applicationCategory": "Game", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } } }
+      ]
+    }
+    </script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
