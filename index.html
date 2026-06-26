@@ -99,6 +99,27 @@
           </p>
         </noscript>
       </section>
+      <section class="subscribe" aria-label="New game alerts">
+        <div class="subscribe-inner">
+          <h2 class="subscribe-title">🔔 NEW GAME ALERTS</h2>
+          <p class="subscribe-sub">
+            Be first to play when we drop a new game. No spam — just new releases.
+          </p>
+          <form id="subscribe-form" class="subscribe-form" novalidate>
+            <input
+              type="email"
+              id="subscribe-email"
+              class="subscribe-input"
+              placeholder="you@email.com"
+              autocomplete="email"
+              required
+              aria-label="Email address"
+            />
+            <button type="submit" class="subscribe-btn" id="subscribe-btn">Notify me</button>
+          </form>
+          <p class="subscribe-status" id="subscribe-status" role="status" aria-live="polite"></p>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">

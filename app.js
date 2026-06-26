@@ -83,6 +83,52 @@
     });
   }
 
+  // ---- New-game-alert signup (native form → /api/subscribe → beehiiv) ----
+  (function () {
+    var form = document.getElementById("subscribe-form");
+    if (!form) return;
+    var input = document.getElementById("subscribe-email");
+    var btn = document.getElementById("subscribe-btn");
+    var status = document.getElementById("subscribe-status");
+
+    function setStatus(msg, kind) {
+      status.textContent = msg;
+      status.className = "subscribe-status" + (kind ? " " + kind : "");
+    }
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var email = (input.value || "").trim();
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        setStatus("Please enter a valid email address.", "err");
+        input.focus();
+        return;
+      }
+      btn.disabled = true;
+      setStatus("Signing you up…", "");
+      fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: email }),
+      })
+        .then(function (r) { return r.json().catch(function () { return {}; }); })
+        .then(function (data) {
+          if (data && data.ok) {
+            setStatus(data.message || "You're in — watch your inbox!", "ok");
+            form.reset();
+            if (window.gtag) window.gtag("event", "newsletter_signup");
+          } else {
+            setStatus((data && data.error) || "Something went wrong. Please try again.", "err");
+            btn.disabled = false;
+          }
+        })
+        .catch(function () {
+          setStatus("Network error. Please try again.", "err");
+          btn.disabled = false;
+        });
+    });
+  })();
+
   grid.appendChild(el("p", "loading", "Loading games…"));
 
   fetch("/games.json", { cache: "no-cache" })

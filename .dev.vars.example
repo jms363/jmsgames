@@ -1,0 +1,5 @@
+# Copy to .dev.vars for local `wrangler dev`, and set the real values in the
+# Cloudflare dashboard (Worker → Settings → Variables and Secrets) for prod.
+# Both come from your JMS Studios beehiiv publication.
+BEEHIIV_API_KEY=your-beehiiv-api-key
+BEEHIIV_PUBLICATION_ID=pub_xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
